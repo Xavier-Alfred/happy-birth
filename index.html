@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="canvas-container"></div>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="content">
+            <!-- Step 1: Initial Reveal -->
+            <div class="step active" id="step1">
+                <div class="emoji heart-break">❤️</div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Hi Adline</h1>
+                <p class="text-xl text-gray-700 mb-8">I have 1 made something for your special day</p>
+                <button class="btn" id="start-btn">Click Here To see it</button>
+            </div>
+
+            <!-- Step 2: Birthday Message -->
+            <div class="step" id="step2">
+                <div class="emoji">🎉</div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Happy Birthday!</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    On your special day, I want you to know how amazing you are. Hope your birthday brings lots of smiles and fun moments. You truly deserve an amazing day! 
+                </p>
+                <p class="text-gray-700">Today is the day the universe decided to bless us all by putting you here. Shine on, superstar!</p>
+                ,<p class="text-xl font-bold mb-2 text-pink-400">Heaven must have been in a good mood the day it sent you here.</p>
+                <button class="btn" id="next-btn-2">Suprise !!!</button>
+            </div>            
+
+            <!-- Step 4: Memory Lane --> 
+            <div class="step" id="step3">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Remember When...</h2>
+                <div class="bg-gradient-to-r from-pink-200 to-rose-200 rounded-xl p-8 mb-8 flex flex-col justify-center items-center">
+                    <img src="crush.webp" height="200" width="200" alt="" srcset="">
+                    <p class="text-lg text-gray-700 italic mt-2">"The world got a little brighter on this day."</p>
+                </div>
+                <p class="text-lg text-gray-700 mb-6">
+                    On this very day, the universe decided it was time to send someone amazing into the world. The sun probably shined a little brighter, the birds sang a little louder, and somewhere, destiny smiled — because you had arrived. From that first moment on earth to today, you’ve been making life better for everyone lucky enough to know you
+                </p>
+                <button class="btn" id="next-btn-3">One Last Thing</button>
+            </div>
+
+            <!-- Step 5: Final Wish -->
+            <div class="step" id="step4">
+                <div class="emoji">🎂</div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">My Birthday Wish For You</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    May your year be filled with joy, laughter, and dreams come true. May you always know how special
+                    you are to me and to everyone lucky enough to know you.
+                </p>
+                <p class="text-xl font-semibold text-pink-600 mb-8">
+                    Happy Birthday, my crush! ❤️
+                </p>
+                <button class="btn" id="confetti-btn">Celebrate!</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
