@@ -95,7 +95,7 @@
          const time = Date.now() * 0.001;
          heart.position.x = heart.userData.originalX + Math.sin(time * heart.userData.speedX * 10) * heart.userData.floatDistance;
          heart.position.y = heart.userData.originalY + Math.sin(time * heart.userData.speedY * 10) * heart.userData.floatDistance;
-         heart.position.z = heart.userData.originalZ + Math.sin(time * heart.userData.speedZ * 20) * heart.userData.floatDistance;
+         heart.position.z = heart.userData.originalZ + Math.sin(time * heart.userData.speedZ * 10) * heart.userData.floatDistance;
 
          // Rotation
          heart.rotation.x += heart.userData.rotationSpeedX;
